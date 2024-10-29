@@ -1,25 +1,30 @@
 
 body {
+    background-image: url(../image.png);
+    background-size: cover;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url(../image.png);
-    background-size: cover;
-    overflow: hidden;
 }
 
 .formulir {
     background-color: rgb(8, 225, 253);
     filter: opacity(90%);
-    padding: 15px;
+    padding: 10px;
     border-radius: 8px;
     border-style: dashed;
     width: 90%;
     max-width: 1200px;
-    max-height: 95vh;
+    max-height: 100vh;
     overflow: auto;
+    -webkit-filter: opacity(90%);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 h2 {
