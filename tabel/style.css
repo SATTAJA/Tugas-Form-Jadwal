@@ -1,0 +1,47 @@
+body {
+    background: url(../image.png);
+    background-size: cover;
+    opacity: 0.7;
+  }
+  .container {
+    margin: auto;
+    width: 80%;
+    margin-top: 4rem;
+    background-color: rgb(0, 95, 107);
+    border: 2px dashed white;
+    border-radius: 20px;
+  }
+
+  .container h2 {
+    text-align: center;
+    color: white;
+  }
+
+  table {
+    width: 150vh;
+    margin: auto;
+    height: 70vh;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+  }
+
+  th {
+    color: white;
+  }
+
+  th:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  @media (max-width: 500px) {
+    .container {
+      width: 64vh;
+    }
+
+    table {
+      width: 60vh;
+    }
+  }

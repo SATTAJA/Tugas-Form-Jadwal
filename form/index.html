@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Anggota Perpustakaan | Satrio Aji Kusumo 30 X-PPLG-2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="formulir">
+      <header>
+        <h2>Formulir Anggota Perpustakaan</h2>
+      </header>
+      <hr />
+      <form>
+        <label for="Nama">Nama</label>
+        <br />
+        <input
+          type="text"
+          id="Nama_Pembeli"
+          name="Nama_Pembeli"
+          placeholder="Masukkan Nama"
+        />
+        <br />
+        <label for="kotalahir">Kota Kelahiran</label>
+        <br />
+        <input
+          type="text"
+          list="namakota"
+          id="kotalahir"
+          name="Kota_lahir"
+          placeholder="Masukkan Kota Lahir"
+        />
+        <datalist id="namakota">
+          <option value="Semarang">Semarang</option>
+          <option value="Yogyakarta">Yogyakarta</option>
+          <option value="Surabaya">Surabaya</option>
+          <option value="Bekasi">Bekasi</option>
+          <option value="Pekalongan">Pekalongan</option>
+          <option value="Magelang">Magelang</option>
+          <option value="Jombang">Jombang</option>
+          <option value="Sragen">Sragen</option>
+          <option value="Tegal">Tegal</option>
+          <option value="Pati">Pati</option>
+          <option value="Kudus">Kudus</option>
+        </datalist>
+        <br>
+        <label for="Tanggallahir">Tanggal Lahir</label>
+        <br />
+        <input type="date" id="Tanggallahir" name="Tanggallahir">
+        <br>
+        <label for="Pembayaran">Jenis Kelamin</label>
+        <br />
+        <input
+          type="radio"
+          id="PembayaranLunas"
+          name="Pembayaran"
+          value="Lunas"
+        />Laki - laki
+        <input
+          type="radio"
+          id="PembayaranBelum"
+          name="Pembayaran"
+          value="Belum Bayar"
+        />Perempuan
+        <br />
+        <label for="NomorTelepon">Nomor Telepon</label>
+        <br />
+        <input type="number" id="NomorTelepon" name="NomorTelepon" placeholder="(Cth.) 081234567890">
+        <br />
+        <label for="Makanan Favorit" >Makanan Favorit</label> <br>
+        <section class="makanan-favorit">
+            <input type="checkbox" id="Mie Ayam" name="Mie Ayam">
+            <label for="Mie Ayam">Mie Ayam</label>
+            <input type="checkbox" id="Indomie" name="Indomie">
+            <label for="Indomie">Indomie</label>
+            <input type="checkbox" id="Sushi" name="Sushi">
+            <label for="Sushi">Sushi</label>
+            <input type="checkbox" id="Nasi Padang" name="Nasi Padang">
+            <label for="Nasi Padang">Nasi Padang</label>
+        </section>
+        <br>
+        <label for="Agama">Agama</label>
+        <br>
+        <select name="Agama" id="Agama">
+            <option value="Islam">Islam</option>
+            <option value="Kristen">Kristen</option>
+            <option value="Katolik">Katolik</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Budha">Budha</option>
+            <option value="Konghucu">Konghucu</option>
+        </select>
+        <br>
+        <label for="Alamat">Alamat</label>
+        <br>
+        <textarea name="Alamat" id="Alamat" placeholder="(Cth.) Jl. Cempaka Putih No. 1000000"></textarea>
+        <br>
+        <section class="button-container">
+          <button type="button" onclick="this.form.reset()">Clear</button>
+          <button type="submit">Send</button>
+        </section>
+      </form>
+    </section>
+  </body>
+</html>
